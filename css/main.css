@@ -1,7 +1,7 @@
 @font-face {
   font-family: Kazmann;
   src: url(../fonts/Kazmann\ Sans.ttf);
- }
+}
 
 *,
 *::before,
@@ -53,7 +53,7 @@ body {
   font-weight: 600;
   line-height: 17px;
   letter-spacing: 0.02em;
-  color: #FFF;  
+  color: #FFF;
   transition: color 0.5s;
 }
 
@@ -89,7 +89,7 @@ body {
   width: 210px;
   font-family: Kazmann, sans-serif;
   font-size: 46px;
-  line-height: 40px;  
+  line-height: 40px;
   letter-spacing: 0.02em;
   text-transform: uppercase;
   color: #1E1613;
@@ -157,7 +157,7 @@ body {
   margin: 6px auto 0 auto;
 }
 
-.slider-arrow {  
+.slider-arrow {
   position: relative;
   display: block;
   margin: 0 auto;
@@ -234,6 +234,10 @@ body {
 }
 
 .intro_description {
+  padding-left: 56px;
+}
+
+.intro_description-text {
   font-size: 14px;
   line-height: 21px;
   letter-spacing: 0.02em;
@@ -249,6 +253,7 @@ body {
 }
 
 .intro_form-row {
+  max-width: 626px;
   height: 78px;
 }
 
@@ -300,18 +305,22 @@ body {
 }
 
 .intro_list {
-  margin-top: 136px;
+  max-width: 1138px;
+  margin-top: 160px;
   color: #FFF;
 }
 
-.intro_list-item {
-  padding: 10px;
+.intro_list ul {
   width: 100%;
-  max-width: 170px;
 }
 
-.intro_list-text {
-  position: absolute;
+.intro_list-item {
+  background-repeat: no-repeat;
+  background-position-y: 6px;
+  width: 100%;
+  max-width: 170px;
+  min-height: 40px;
+  padding-left: 40px;
   font-weight: bold;
   font-size: 14px;
   line-height: 22px;
@@ -319,7 +328,7 @@ body {
   color: #FFF;
 }
 
-li:last-child .intro_list-text {
+li:last-child.intro_list-item {
   color: #1E1613;
 }
 
@@ -495,7 +504,7 @@ li:last-child .intro_list-text {
   z-index: 1;
 }
 
-.set_number {  
+.set_number {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
@@ -504,7 +513,7 @@ li:last-child .intro_list-text {
   color: #1E1613;
 }
 
-.card_hover + .card-body .reveal {
+.card_hover+.card-body .reveal {
   z-index: 2;
   visibility: hidden;
   opacity: 0;
@@ -512,7 +521,7 @@ li:last-child .intro_list-text {
   padding: 0;
 }
 
-.card_hover:hover + .card-body .reveal {
+.card_hover:hover+.card-body .reveal {
   height: auto;
   visibility: visible;
   opacity: 1;
@@ -530,13 +539,13 @@ li:last-child .intro_list-text {
 
 .card-title::before {
   content: '';
-	display: inline-block;
-	vertical-align: middle;
-	box-sizing: border-box;
-	width: 27px;
-	height: 1px;
-	background: #FFD17E;
-	border: solid #FFD17E;
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  width: 27px;
+  height: 1px;
+  background: #FFD17E;
+  border: solid #FFD17E;
   border-width: 0 1px;
   margin-right: 15px;
 }
@@ -667,7 +676,7 @@ li:last-child .intro_list-text {
 }
 
 .your_name input::placeholder,
-.your_phone input::placeholder {  
+.your_phone input::placeholder {
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 0.02em;
@@ -705,27 +714,33 @@ li:last-child .intro_list-text {
 
 /* MEDIA QUERIES */
 
-@media (max-width: 1499.98px) {
+@media (max-width: 1500px) {
   .slider {
     left: 97%;
   }
+
   .first-section_bckg {
-    background: #1E1613 url("../img/Frame.png") no-repeat top right;
+    background: #1E1613 url("../img/choco_banan.png") no-repeat top right;
   }
-  li:last-child .intro_list-text {
+
+  li:last-child.intro_list-item {
     color: #FFF;
   }
+
   .header_contacts-text,
   .header_contacts-number {
     color: #FFF;
   }
-  .intro_description,
+
+  .intro_description-text,
   .intro_description-price {
     color: #FFD17E;
   }
+
   .info_percent-row {
     margin: 0;
   }
+
   .your_phone::before {
     right: 100%;
     top: -57%;
@@ -733,29 +748,35 @@ li:last-child .intro_list-text {
   }
 }
 
-@media (max-width: 1199.98px) {
+@media (max-width: 1200px) {
   .slider {
     display: none;
   }
+
   .first-section_bckg {
     background: #1E1613;
   }
-  li:last-child .intro_list-text {
+
+  .intro_description {
+    padding-left: 15px;
+  }
+
+  .intro_description-text,
+  .intro_description-price {
     color: #FFF;
   }
-  .header_contacts-text,
-  .header_contacts-number {
-    color: #FFF;
-  }
+
   .form-group {
     margin: 25px 0;
     padding-left: 10px;
   }
+
   .your_phone::before {
     right: 100%;
     top: -68%;
     height: 78px;
   }
+
   .personal_data,
   .personal_data a {
     color: #000;
@@ -768,7 +789,8 @@ li:last-child .intro_list-text {
     display: flex;
     align-items: center;
     justify-content: center;
-  }  
+  }
+
   .header_small-menu {
     display: block;
     color: #fff;
@@ -776,9 +798,11 @@ li:last-child .intro_list-text {
     cursor: pointer;
     z-index: 1000;
   }
+
   .fa-times {
     display: none;
   }
+
   .nav-list {
     list-style: none;
     position: fixed;
@@ -793,18 +817,23 @@ li:last-child .intro_list-text {
     justify-content: space-around;
     z-index: 900;
   }
+
   .open .fa-times {
     display: block;
-  }  
+  }
+
   .open .fa-bars {
     display: none;
   }
+
   .open .nav-list {
     display: flex;
   }
+
   .nav-item {
     border-bottom: 2px solid rgba(255, 255, 255, 0.3);
-  }  
+  }
+
   .nav-link {
     display: block;
     color: #fff;
@@ -821,63 +850,73 @@ li:last-child .intro_list-text {
     height: 0;
     width: 98%;
   }
+
   .card_price {
     font-size: 20px;
     line-height: 27px;
-  }  
+  }
+
   .card_buy_btn {
     width: 125px;
   }
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 576px) {
   .nav {
     text-align: center;
   }
+
   .nav-link {
     line-height: 30px;
   }
+
   .first-section_bckg {
     background: none;
     background-color: #1E1613;
   }
+
   .intro_title {
     font-size: 30px;
     line-height: 40px;
   }
-  .header_contacts-number, .header_contacts-text {
-    color: #FFF;
-  }
+
   .cards {
     height: auto;
   }
+
   .card {
     background-color: #2A201D;
   }
+
   .third-section_form {
     padding-left: 10px;
   }
+
   .third-section_form_title {
     font-size: 24px;
     line-height: 30px;
   }
+
   .third-section_form_subtitle {
     font-size: 14px;
     line-height: 20px;
   }
+
   .call_me {
     margin-right: 0;
   }
+
   .your_phone::before {
     right: 1px;
     width: 98%;
   }
 }
 
-@media (max-width: 474px) {
+@media (max-width: 456px) {
   .intro_title {
     padding-top: 20px;
   }
+
   .third-section_form_title,
   .third-section_form_subtitle,
   .personal_data,
