@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700,800&display=swap&subset=cyrillic"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <title>Shelli SWEET</title>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <header class="header container-fluid">
+    <nav class="navbar navbar-expand-lg">
+      <div class="menu__toggle header_small-menu">
+        <i class="fas fa-bars"></i>
+        <i class="fas fa-times"></i>
+      </div>
+      <img src="./img/logo.png" alt="logo" class="navbar-brand" />
+      <span class="navbar-text">Премиальный шоколад <br />
+        ручной работы</span>
+      <ul class="nav-list nav">
+        <li class="nav-item">
+          <a href="#" class="nav-link">Главная</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Наши работы</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Отзывы</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Как заказать</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Контакты</a>
+        </li>
+      </ul>
+      <div class="d-flex flex-row header_contacts">
+        <a href="tel:+78126490729" class="col header_contacts-link_img">
+          <img class="header_contacts-img" src="./img/Phone.svg" alt="" />
+        </a>
+        <div class="col">
+          <div class="row header_contacts-text">На связи по будням с 7 до 15 МСК</div>
+          <a href="tel:+78126490729" class="row header_contacts-number">+7 812 649 07 29</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  
+  <main class="main">
+
+    <div class="slider">
+      <ul class="slider_list">
+        <li>
+          <a href="#section1" id="slider_link-1" class="slider_link">01</a>
+        </li>
+        <li>
+          <a href="#section2" id="slider_link-2" class="slider_link">02</a>
+        </li>
+        <li>
+          <a href="#section3" id="slider_link-3" class="slider_link">03</a>
+        </li>
+        <li>
+          <a href="#section4" id="slider_link-4" class="slider_link">04</a>
+        </li>
+      </ul>
+      <div class="slider_scroll-icon"></div>
+      <div class="slider-arrow"></div>
+    </div>
+
+    <!-- FIRST SECTION -->
+
+    <section class="container-fluid first-section_bckg" id="section1">
+      <div class="content first-section-size">
+        <div class="row align-items-end no-gutters intro">
+          <div class="col-md-10 col-xl-6">
+            <h1 class="intro_title">БРЕНДИРОВАННЫЙ ШОКОЛАД РУЧНОЙ РАБОТЫ</h1>
+            <h3 class="intro_subtitle">
+              Оставьте заявку и получите индивидуальное предложение по готовым
+              наборам
+            </h3>
+          </div>
+          <div class="col-md-12 col-xl-2">
+            <p class="intro_description">
+              Набор натурального <br />
+              безглютенового шоколада
+            </p>
+            <p class="intro_description-price">от 890 рублей</p>
+          </div>
+        </div>
+        <div class="row align-items-center intro_form-row">
+          <div class="col-xs-12 col-md-9 col-xl-6">
+            <form>
+              <div class="d-flex flex-wrap form-row align-items-center intro_form">
+                <div class="col intro_form-input">
+                  <label class="intro_form-input_label" for="formInput">Введите ваш телефон</label>
+                  <input type="tel" class="phone__mask form-input form-control" id="formInput" placeholder="+7 (123) 456 78 91" />
+                </div>
+                <div class="col text-center">
+                  <button type="submit" class="btn intro_form-btn">
+                    получить предложение
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="row intro_list list-unstyled justify-content-between">
+          <div class="col-md-5 col-lg-7 col-xl-12">
+            <ul class="row justify-content-between list-unstyled">
+              <li class="intro_list-item">
+                <img class="mr-3" src="./img/soy.png" alt="">
+                <span class="intro_list-text">Без сои</span>
+              </li>
+              <li class="intro_list-item">
+                <img class="mr-3" src="./img/sugar.png" alt="">
+                <span class="intro_list-text">Без сахара</span>
+              </li>
+              <li class="intro_list-item">
+                <img class="mr-3" src="./img/lactose.png" alt="">
+                <span class="intro_list-text">Без лактозы</span>
+              </li>
+              <li class="intro_list-item">
+                <img class="mr-3" src="./img/fat.png" alt="">
+                <span class="intro_list-text">Без животного <br> жира</span>
+              </li>
+              <li class="intro_list-item">
+                <img class="mr-3" src="./img/conser.png" alt="">
+                <span class="intro_list-text">Без <br> консервантов</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECOND SECTION -->
+
+    <section class="container-fluid" id="section2">
+      <div class="content second-section-size">
+
+        <div class="row">
+          <div class="col-md-10 col-xl-6 second-section_title_block">
+            <h2 class="second-section_title">ПОЧЕМУ ШОКОЛАД ЛУЧШЕ БЛОКНОТА ИЛИ РУЧКИ?</h2>
+          </div>
+        </div>
+
+        <div class="col position-absolute d-none d-xl-block second-section_bckg">
+          <img src="./img/chips1.png" alt="" class="img-fluid position-absolute">
+          <img src="./img/slices.png" alt="" class="img-fluid position-absolute ml-5">
+        </div>
+
+        <div class="row align-items-center second-section_info p-0 mb-md-3">
+          <div class="col-sm-12 col-xl-6">
+            <div class="row justify-content-lg-start justify-content-xs-center info_percent-row">
+              <p class="col-3 info_percent text-left">96%</p>
+              <p class="col-6 info_percent-text">людей, предпочтут шоколад блокноту или ручке.</p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-8 col-xl-6">
+            <div class="row justify-content-end ml-xl-5">
+              <div class="col-xl-1 mr-3">
+                <img src="./img/loyal.png" alt="">
+              </div>
+              <div class="col-xl-6">
+                <p class="info_title m-0">Лояльность</p>
+                <p class="info_description mt-1">Шоколад воздействует на органы чувств, что позволяет вызвать эмоциональную
+                  привязку к бренду</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row align-items-start justify-content-xl-end second-section_info">
+          <div class="col-xl-1 diamond">
+            <img src="./img/diamond.png" alt="">
+          </div>
+          <div class="col-xs-12 col-md-8 col-xl-3 mr-xl-5">
+            <p class="info_title m-0">Шоколад любит более 95% людей</p>
+            <p class="info_description info_description_width mt-1">Всеобщая любовь к шоколаду станет лучшим инструментом положительного
+              общения с сотрудниками, клиентами и партнерами</p>
+          </div>
+        </div>
+        <div class="row align-items-start mt-xl-4 justify-content-xl-center second-section_info">
+          <div class="col-xl-1 offset-xl-3 prize">
+            <img src="./img/prize.png" alt="">
+          </div>
+          <div class="col-xs-12 col-md-8 col-xl-4">
+            <p class="info_title m-0">Престиж компании</p>
+            <p class="info_description mt-1">Премиальный шоколад с логотипом подчеркнет статусность компании</p>
+          </div>
+        </div>
+
+        <div class="row d-xl-none">
+          <img src="./img/chips1.png" alt="" class="img-fluid">
+          <img src="./img/slices.png" alt="" class="img-fluid position-absolute ml-5">
+        </div>
+
+      </div>
+    </section>
+
+    <!-- THIRD SECTION -->
+
+    <section class="container-fluid bckg_mask" id="section3">
+
+      <div class="third-section_bckg">        
+        <img src="./img/chips2.png" alt="" class="img-fluid third-section_bckg-3">
+        <img src="./img/choco_chips.png" alt="" class="img-fluid third-section_bckg-2">
+        <img src="./img/broken_choco.png" alt="" class="img-fluid third-section_bckg-1">
+      </div>
+
+      <div class="content">
+
+        <div class="row">
+          <div class="col-md-10 col-xl-8">
+            <h2 class="third-section_title">Варианты готовых наборов</h2>
+            <p class="third-section_subtitle">Предлагаем варианты готовых подарочных наборов</p>
+          </div>
+        </div>
+
+        <div class="row cards">
+          <div class="col">
+            <div class="card">
+              <div class="card_img card_hover">
+                <div class="box">
+                  <div class="set_number">Набор №1</div>
+                </div>
+                <img class="card-img-top" src="./img/set1.png" alt="Card image">
+              </div>
+              <div class="card-body p-0">
+                <h5 class="card-title">Удиви коллегу</h5>
+                <ul class="list-unstyled reveal">
+                  <li>Состав набора:</li>
+                  <li>Mix ломаного шоколада</li>
+                  <li>Коробочка ломаного с кокосом</li>
+                  <li>Набор слайсов с клюквой</li>
+                  <li>Набор слайсов с миндалем</li>
+                  <li>Плитка с кедровыми орешками</li>
+                  <li>Плитка с фундуком и миндалем</li>
+                  <li>Плитка кэроба с фисташкой</li>
+                  <li>Плитка кэроба с арахисом</li>
+                </ul>
+                <div class="row justify-content-center card_buy_block">
+                  <span class="card_price">2 000₽</span>
+                  <button class="btn card_buy_btn">
+                    <img src="./img/buy.png" alt="Buy">
+                    <span>Заказать</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card_img card_hover">
+                <div class="box">
+                  <div class="set_number">Набор №2</div>
+                </div>
+                <img class="card-img-top" src="./img/set2.png" alt="Card image">
+              </div>
+              <div class="card-body p-0">
+                <h5 class="card-title">Удиви коллегу</h5>
+                <ul class="list-unstyled reveal">
+                  <li>Состав набора:</li>
+                  <li>Mix ломаного шоколада</li>
+                  <li>Коробочка ломаного с кокосом</li>
+                  <li>Набор слайсов с клюквой</li>
+                  <li>Набор слайсов с миндалем</li>
+                  <li>Плитка с кедровыми орешками</li>
+                  <li>Плитка с фундуком и миндалем</li>
+                  <li>Плитка кэроба с фисташкой</li>
+                  <li>Плитка кэроба с арахисом</li>
+                </ul>
+                <div class="row justify-content-center card_buy_block">
+                  <span class="card_price">3 000₽</span>
+                  <button class="btn card_buy_btn">
+                    <img src="./img/buy.png" alt="Buy">
+                    <span>Заказать</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card_img card_hover">
+                <div class="box">
+                  <div class="set_number">Набор №3</div>
+                </div>
+                <img class="card-img-top" src="./img/set3.png" alt="Card image">
+              </div>
+              <div class="card-body p-0">
+                <h5 class="card-title">Удиви коллегу</h5>
+                <ul class="list-unstyled reveal">
+                  <li>Состав набора:</li>
+                  <li>Mix ломаного шоколада</li>
+                  <li>Коробочка ломаного с кокосом</li>
+                  <li>Набор слайсов с клюквой</li>
+                  <li>Набор слайсов с миндалем</li>
+                  <li>Плитка с кедровыми орешками</li>
+                  <li>Плитка с фундуком и миндалем</li>
+                  <li>Плитка кэроба с фисташкой</li>
+                  <li>Плитка кэроба с арахисом</li>
+                </ul>
+                <div class="row justify-content-center card_buy_block">
+                  <span class="card_price">5 000₽</span>
+                  <button class="btn card_buy_btn">
+                    <img src="./img/buy.png" alt="Buy">
+                    <span>Заказать</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row m-0">
+          <!-- ID сюда добавил, чтобы сайд-скролл работал на каждом элементе -->
+          <div class="col third-section_form" id="section4">
+            <h3 class="third-section_form_title">СОМНЕВАЕТЕСЬ? <br> ЛУЧШЕ ОДИН РАЗ ПОПРОБОВАТЬ</h3>
+            <p class="third-section_form_subtitle">Наш шоколад всегда свежий и вкусный. Оставьте свои контакты и мы БЕСПЛАТНО доставим его
+              Вам на дегустацию!</p>
+            <form>
+              <div class="form-row align-items-center call_me">
+                <div class="form-group your_name col-md-6 col-xl-4">
+                  <input type="text" class="form-control" placeholder="Ваше имя">
+                </div>
+                <div class="form-group your_phone col-md-6 col-xl-4">
+                  <input type="tel" class="phone__mask form-control" placeholder="Ваш телефон">
+                </div>
+                <div class="form-group col-xl-2 text-center">
+                  <button class="btn">Заказать</button>
+                </div>
+              </div>
+            </form>
+            <p class="personal_data">Нажимая кнопку, я даю согласие на обработку <a href="#">персональных данных</a>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section >
+  </main>
+
+  <script src="./js/mobile_menu.js"></script>
+  <script src="./js/phone_mask.js"></script>
+  <script src="./js/scroll.js"></script>
+
+</body>
+
+</html>
